@@ -1,7 +1,10 @@
+//--------------------------------------------------------------------
+// Modules
 module "jx" {
-  source = "jenkins-x/jx/google"
+  source  = "app.terraform.io/jenkinsxio/jx/google"
+  version = "1.7.0"
 
-  gcp_project = "<my-gcp-project-id>"
+  gcp_project = "jenkins-x-labs-bdd"
 }
 
 output "jx_requirements" {
