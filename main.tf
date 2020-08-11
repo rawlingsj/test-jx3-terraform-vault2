@@ -6,6 +6,7 @@
 # }
 module "jx" {
   source = "github.com/rawlingsj/terraform-google-jx"
+  gcp_project = "jenkins-x-labs-bdd"
 }
 
 output "jx_requirements" {
