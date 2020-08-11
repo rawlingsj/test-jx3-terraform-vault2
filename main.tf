@@ -1,8 +1,11 @@
 //--------------------------------------------------------------------
 // Modules
+# module "jx" {
+#   source  = "app.terraform.io/jenkinsxio/jx/google"
+#   gcp_project = "jenkins-x-labs-bdd"
+# }
 module "jx" {
-  source  = "app.terraform.io/jenkinsxio/jx/google"
-  gcp_project = "jenkins-x-labs-bdd"
+  source = "github.com/rawlingsj/terraform-google-jx"
 }
 
 output "jx_requirements" {
