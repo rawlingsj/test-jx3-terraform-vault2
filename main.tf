@@ -7,6 +7,8 @@
 module "jx" {
   source = "github.com/rawlingsj/terraform-google-jx"
   gcp_project = "jenkins-x-labs-bdd"
+  jenkins_x_pipeline_bot_username = var.jenkins_x_pipeline_bot_username
+  jenkins_x_pipeline_bot_token    = var.jenkins_x_pipeline_bot_token
 }
 
 output "jx_requirements" {
